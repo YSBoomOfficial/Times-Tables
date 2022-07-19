@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct TimesTablesApp: App {
+	// swiftlint:disable:next identifier_name
+	@StateObject private var vm = TimesTablesViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			GameView()
+				.environmentObject(vm)
+				.onAppear {
+					// MARK: Uncomment before prod
+					// AppReviewRequest.requestReviewIfNeeded()
+				}
         }
     }
 }
