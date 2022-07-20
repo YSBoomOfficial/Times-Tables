@@ -18,6 +18,7 @@
 		D37C8E8928824D9200E28AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37C8E8828824D9200E28AFD /* Assets.xcassets */; };
 		D37C8E8C28824D9200E28AFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37C8E8B28824D9200E28AFD /* Preview Assets.xcassets */; };
 		D388802B288374EC005BBD93 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D388802A288374EC005BBD93 /* SettingsView.swift */; };
+		D3B22B832887849E005F0FCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3B22B822887849E005F0FCC /* LaunchScreen.storyboard */; };
 		D3EA9DCB28825234009AE542 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EA9DCA28825234009AE542 /* ScreenSize.swift */; };
 		D3EA9DCD288255FB009AE542 /* AnswerCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EA9DCC288255FB009AE542 /* AnswerCardView.swift */; };
 /* End PBXBuildFile section */
@@ -29,12 +30,13 @@
 		D3117A8428831E7B00B5277A /* TimesTablesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesTablesViewModel.swift; sourceTree = "<group>"; };
 		D3117A872883267D00B5277A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D3117A89288326A600B5277A /* AppReviewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewRequest.swift; sourceTree = "<group>"; };
-		D37C8E8128824D9100E28AFD /* TimesTables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimesTables.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D37C8E8128824D9100E28AFD /* Times Tables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Times Tables.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37C8E8428824D9100E28AFD /* TimesTablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesTablesApp.swift; sourceTree = "<group>"; };
 		D37C8E8628824D9100E28AFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D37C8E8828824D9200E28AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D37C8E8B28824D9200E28AFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D388802A288374EC005BBD93 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D3B22B822887849E005F0FCC /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3EA9DCA28825234009AE542 /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
 		D3EA9DCC288255FB009AE542 /* AnswerCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,7 +94,7 @@
 		D37C8E8228824D9100E28AFD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D37C8E8128824D9100E28AFD /* TimesTables.app */,
+				D37C8E8128824D9100E28AFD /* Times Tables.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +107,7 @@
 				D3117A8428831E7B00B5277A /* TimesTablesViewModel.swift */,
 				D3117A7C28830A6A00B5277A /* Screens */,
 				D37C8E8828824D9200E28AFD /* Assets.xcassets */,
+				D3B22B822887849E005F0FCC /* LaunchScreen.storyboard */,
 				D37C8E8A28824D9200E28AFD /* Preview Content */,
 			);
 			path = TimesTables;
@@ -121,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D37C8E8028824D9100E28AFD /* TimesTables */ = {
+		D37C8E8028824D9100E28AFD /* Times Tables */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D37C8E8F28824D9200E28AFD /* Build configuration list for PBXNativeTarget "TimesTables" */;
+			buildConfigurationList = D37C8E8F28824D9200E28AFD /* Build configuration list for PBXNativeTarget "Times Tables" */;
 			buildPhases = (
 				D37C8E7D28824D9100E28AFD /* Sources */,
 				D37C8E7E28824D9100E28AFD /* Frameworks */,
@@ -134,9 +137,9 @@
 			);
 			dependencies = (
 			);
-			name = TimesTables;
+			name = "Times Tables";
 			productName = TimesTables;
-			productReference = D37C8E8128824D9100E28AFD /* TimesTables.app */;
+			productReference = D37C8E8128824D9100E28AFD /* Times Tables.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D37C8E7C28824D9100E28AFD /* Build configuration list for PBXProject "TimesTables" */;
+			buildConfigurationList = D37C8E7C28824D9100E28AFD /* Build configuration list for PBXProject "Times Tables" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -167,7 +170,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D37C8E8028824D9100E28AFD /* TimesTables */,
+				D37C8E8028824D9100E28AFD /* Times Tables */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +182,7 @@
 			files = (
 				D37C8E8C28824D9200E28AFD /* Preview Assets.xcassets in Resources */,
 				D37C8E8928824D9200E28AFD /* Assets.xcassets in Resources */,
+				D3B22B832887849E005F0FCC /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +359,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -390,6 +395,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -412,7 +418,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D37C8E7C28824D9100E28AFD /* Build configuration list for PBXProject "TimesTables" */ = {
+		D37C8E7C28824D9100E28AFD /* Build configuration list for PBXProject "Times Tables" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D37C8E8D28824D9200E28AFD /* Debug */,
@@ -421,7 +427,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D37C8E8F28824D9200E28AFD /* Build configuration list for PBXNativeTarget "TimesTables" */ = {
+		D37C8E8F28824D9200E28AFD /* Build configuration list for PBXNativeTarget "Times Tables" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D37C8E9028824D9200E28AFD /* Debug */,
