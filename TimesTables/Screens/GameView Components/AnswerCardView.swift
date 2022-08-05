@@ -8,51 +8,46 @@
 import SwiftUI
 
 struct AnswerCardView: View {
-	// swiftlint:disable:next identifier_name
-	@EnvironmentObject var vm: TimesTablesViewModel
-
+	let proxy: GeometryProxy
 	let value: Int
 
-	var gradientColors: [Color] = [.red, .purple, .blue]
-	var startPoint: UnitPoint = .topLeading
-	var endPoint: UnitPoint = .bottomTrailing
+	let gradientColors: [Color] = [.red, .purple, .blue]
+	let startPoint: UnitPoint = .topLeading
+	let endPoint: UnitPoint = .bottomTrailing
 
 	var body: some View {
-		Button {
-			vm.answerButtonTapped(value)
-		} label: {
-			ZStack {
-				Capsule()
-					.strokeBorder(
-						.linearGradient(
-							colors: gradientColors,
-							startPoint: startPoint,
-							endPoint: endPoint
-						),
-						style: .init(lineWidth: 5)
-					)
-					.frame(
-						width: ScreenSize.minLength - 10,
-						height: (ScreenSize.maxLength/10)
-					)
+		ZStack {
+			Capsule()
+				.strokeBorder(
+					.linearGradient(
+						colors: gradientColors,
+						startPoint: startPoint,
+						endPoint: endPoint
+					),
+					style: .init(lineWidth: 5)
+				)
+				.frame(
+					width: proxy.size.width - 10,
+					height: (proxy.size.height/10)
+				)
 
-				Text(value, format: .number)
-					.font(.largeTitle.weight(.semibold))
-			}
-		}.buttonStyle(.plain)
+			Text(value, format: .number)
+				.font(.largeTitle.weight(.semibold))
+		}
 	}
 }
 
 struct AnswerCardView_Previews: PreviewProvider {
 	static var previews: some View {
-		VStack(spacing: 10) {
-			Spacer()
-			AnswerCardView(value: 1)
-			AnswerCardView(value: 2)
-			AnswerCardView(value: 3)
-			AnswerCardView(value: 4)
+		GeometryReader { proxy in
+			VStack(spacing: 10) {
+				Spacer()
+				AnswerCardView(proxy: proxy, value: 1)
+				AnswerCardView(proxy: proxy, value: 2)
+				AnswerCardView(proxy: proxy, value: 3)
+				AnswerCardView(proxy: proxy, value: 4)
+			}
+			.preferredColorScheme(.dark)
 		}
-		.preferredColorScheme(.dark)
-		.environmentObject(TimesTablesViewModel())
 	}
 }

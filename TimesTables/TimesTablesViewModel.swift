@@ -11,9 +11,9 @@ class TimesTablesViewModel: ObservableObject {
 	@Published private(set) var score = 0
 
 	@Published private(set) var questionsAnswered = 0
-	@Published private(set) var questionsAnsweredCorectly = 0
+	@Published private(set) var questionsAnsweredCorrectly = 0
 
-	@Published var maxTimesTableNum = 1.0
+	@Published var maxTimesTableNum = 12.0
 	@Published private(set) var rhsNum: Int = 1
 	@Published private(set) var lhsNum: Int = 1
 	@Published private(set) var possibleAnswers = [Int]()
@@ -25,6 +25,8 @@ class TimesTablesViewModel: ObservableObject {
 
 	func reset() {
 		score = 0
+		questionsAnswered = 0
+		questionsAnsweredCorrectly = 0
 		askQuestion()
 	}
 
@@ -51,7 +53,7 @@ class TimesTablesViewModel: ObservableObject {
 		questionsAnswered += 1
 		if answer == correctAnswer {
 			score += 1
-			questionsAnsweredCorectly += 1
+			questionsAnsweredCorrectly += 1
 		}
 		askQuestion()
 	}

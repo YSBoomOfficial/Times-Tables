@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CustomTopBarView: View {
 	// swiftlint:disable:next identifier_name
-	@EnvironmentObject var vm: TimesTablesViewModel
+	@ObservedObject var vm: TimesTablesViewModel
 
 	var body: some View {
 		HStack {
@@ -37,9 +37,8 @@ struct CustomTopBarView: View {
 
 struct CustomTopBarView_Previews: PreviewProvider {
 	static var previews: some View {
-		CustomTopBarView()
+		CustomTopBarView(vm: .init())
 			.previewLayout(.sizeThatFits)
 			.preferredColorScheme(.dark)
-			.environmentObject(TimesTablesViewModel())
 	}
 }

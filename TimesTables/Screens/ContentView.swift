@@ -1,46 +1,27 @@
 //
-//  GameView.swift
-//  TimesTables
+//  ContentView.swift
+//  Times Tables
 //
-//  Created by Yash Shah on 16/07/2022.
+//  Created by Yash Shah on 05/08/2022.
 //
 
 import SwiftUI
 
-struct GameView: View {
+struct ContentView: View {
 	// swiftlint:disable:next identifier_name
-	@EnvironmentObject var vm: TimesTablesViewModel
+	@StateObject private var vm = TimesTablesViewModel()
 
 	var body: some View {
-		VStack {
-			CustomTopBarView()
-
-			(Text("Score: ").bold() + Text(vm.score, format: .number))
-				.font(.title2)
-
-			Spacer()
-
-			QuestionCardView(num1: vm.lhsNum, num2: vm.rhsNum)
-
-			Spacer()
-
-			VStack(spacing: 10) {
-				ForEach(vm.possibleAnswers, id: \.self) { ans in
-					AnswerCardView(value: ans)
-				}
+		GameView(vm: vm)
+			.sheet(isPresented: $vm.isShowingSettings) {
+				SettingsView(vm: vm)
 			}
-		}
-		.onAppear(perform: vm.askQuestion)
-		.sheet(isPresented: $vm.isShowingSettings) {
-			SettingsView()
-		}
 	}
 }
 
-struct GameView_Previews: PreviewProvider {
+struct ContentView_Previews: PreviewProvider {
 	static var previews: some View {
-		GameView()
+		ContentView()
 			.preferredColorScheme(.dark)
-			.environmentObject(TimesTablesViewModel())
 	}
 }

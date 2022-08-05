@@ -9,11 +9,10 @@ import SwiftUI
 
 struct SettingsView: View {
 	// swiftlint:disable:next identifier_name
-	@EnvironmentObject var vm: TimesTablesViewModel
+	@ObservedObject var vm: TimesTablesViewModel
 
 	var body: some View {
 		NavigationView {
-
 			List {
 				Section {
 					VStack(alignment: .leading) {
@@ -61,7 +60,7 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
 	static var previews: some View {
-		SettingsView()
+		SettingsView(vm: .init())
 			.preferredColorScheme(.dark)
 			.environmentObject(TimesTablesViewModel())
 	}

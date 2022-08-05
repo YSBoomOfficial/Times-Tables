@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D37C8E8028824D9100E28AFD"
-               BuildableName = "TimesTables.app"
+               BuildableName = "Times Tables.app"
                BlueprintName = "Times Tables"
                ReferencedContainer = "container:Times Tables.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D37C8E8028824D9100E28AFD"
-            BuildableName = "TimesTables.app"
+            BuildableName = "Times Tables.app"
             BlueprintName = "Times Tables"
             ReferencedContainer = "container:Times Tables.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D37C8E8028824D9100E28AFD"
-            BuildableName = "TimesTables.app"
+            BuildableName = "Times Tables.app"
             BlueprintName = "Times Tables"
             ReferencedContainer = "container:Times Tables.xcodeproj">
          </BuildableReference>

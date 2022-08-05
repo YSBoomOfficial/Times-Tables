@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct QuestionCardView: View {
-	// swiftlint:disable:next identifier_name
-	@EnvironmentObject var vm: TimesTablesViewModel
-
+	let proxy: GeometryProxy
 	let num1: Int
 	let num2: Int
 
@@ -30,8 +28,8 @@ struct QuestionCardView: View {
 					)
 				)
 				.frame(
-					width: ScreenSize.minLength - 35,
-					height: ScreenSize.maxLength/3.75
+					width: proxy.size.width - 35,
+					height: proxy.size.height/3.75
 				)
 				.clipShape(RoundedRectangle(cornerRadius: 10))
 
@@ -64,8 +62,9 @@ struct QuestionCardView: View {
 
 struct QuestionCardView_Previews: PreviewProvider {
 	static var previews: some View {
-		QuestionCardView(num1: 0, num2: 1)
-			.preferredColorScheme(.dark)
-			.environmentObject(TimesTablesViewModel())
+		GeometryReader { proxy in
+			QuestionCardView(proxy: proxy, num1: 0, num2: 1)
+				.preferredColorScheme(.dark)
+		}
 	}
 }
