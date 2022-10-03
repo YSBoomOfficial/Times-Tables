@@ -1,8 +1,8 @@
 //
 //  AppReviewRequest.swift
-//  TimesTables
+//  Rock Paper Scissors
 //
-//  Created by Yash Shah on 16/07/2022.
+//  Created by Yash Shah on 12/06/2022.
 //
 
 import SwiftUI
@@ -15,14 +15,15 @@ enum AppReviewRequest {
 
 	static func requestReviewIfNeeded() {
 		runsSinceLastRequest += 1
-		guard let appBuild = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String,
-			  let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String else { return }
+		guard let appVersion = Bundle.main.releaseVersionNumber, let appBuild = Bundle.main.buildVersionNumber else { return }
 
 		let currentVersion = "\(appVersion).\(appBuild)"
-#if DEBUG
+
+		#if DEBUG
 		print("Run Count: \(runsSinceLastRequest) Out Of Threshold - \(threshold)")
 		print("Version: \(currentVersion)")
-#endif
+		#endif
+
 		// Only present if new version
 		guard currentVersion != version else { runsSinceLastRequest = 0; return }
 		// Only present review if threshold has been met

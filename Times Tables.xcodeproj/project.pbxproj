@@ -11,8 +11,8 @@
 		D3117A812883184000B5277A /* CustomTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3117A802883184000B5277A /* CustomTopBarView.swift */; };
 		D3117A8328831A0700B5277A /* GradientButton+ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3117A8228831A0700B5277A /* GradientButton+ButtonStyle.swift */; };
 		D3117A8528831E7B00B5277A /* TimesTablesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3117A8428831E7B00B5277A /* TimesTablesViewModel.swift */; };
-		D3117A882883267D00B5277A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3117A872883267D00B5277A /* Constants.swift */; };
-		D3117A8A288326A600B5277A /* AppReviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3117A89288326A600B5277A /* AppReviewRequest.swift */; };
+		D32033DF28EA8E0C0093CB15 /* Bundle+AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32033DD28EA8E0C0093CB15 /* Bundle+AppInfo.swift */; };
+		D32033E028EA8E0C0093CB15 /* AppReviewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32033DE28EA8E0C0093CB15 /* AppReviewRequest.swift */; };
 		D37C8E8528824D9100E28AFD /* TimesTablesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C8E8428824D9100E28AFD /* TimesTablesApp.swift */; };
 		D37C8E8728824D9100E28AFD /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D37C8E8628824D9100E28AFD /* GameView.swift */; };
 		D37C8E8928824D9200E28AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D37C8E8828824D9200E28AFD /* Assets.xcassets */; };
@@ -28,8 +28,8 @@
 		D3117A802883184000B5277A /* CustomTopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTopBarView.swift; sourceTree = "<group>"; };
 		D3117A8228831A0700B5277A /* GradientButton+ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GradientButton+ButtonStyle.swift"; sourceTree = "<group>"; };
 		D3117A8428831E7B00B5277A /* TimesTablesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesTablesViewModel.swift; sourceTree = "<group>"; };
-		D3117A872883267D00B5277A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		D3117A89288326A600B5277A /* AppReviewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewRequest.swift; sourceTree = "<group>"; };
+		D32033DD28EA8E0C0093CB15 /* Bundle+AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+AppInfo.swift"; sourceTree = "<group>"; };
+		D32033DE28EA8E0C0093CB15 /* AppReviewRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReviewRequest.swift; sourceTree = "<group>"; };
 		D37C8E8128824D9100E28AFD /* Times Tables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Times Tables.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37C8E8428824D9100E28AFD /* TimesTablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesTablesApp.swift; sourceTree = "<group>"; };
 		D37C8E8628824D9100E28AFD /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -55,8 +55,8 @@
 		D3117A7B28830A5F00B5277A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				D3117A872883267D00B5277A /* Constants.swift */,
-				D3117A89288326A600B5277A /* AppReviewRequest.swift */,
+				D32033DE28EA8E0C0093CB15 /* AppReviewRequest.swift */,
+				D32033DD28EA8E0C0093CB15 /* Bundle+AppInfo.swift */,
 				D3117A8228831A0700B5277A /* GradientButton+ButtonStyle.swift */,
 			);
 			path = Utils;
@@ -214,15 +214,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32033E028EA8E0C0093CB15 /* AppReviewRequest.swift in Sources */,
 				D3EA9DCD288255FB009AE542 /* AnswerCardView.swift in Sources */,
-				D3117A8A288326A600B5277A /* AppReviewRequest.swift in Sources */,
 				D3EC401A289CABA300131487 /* ContentView.swift in Sources */,
 				D37C8E8728824D9100E28AFD /* GameView.swift in Sources */,
 				D37C8E8528824D9100E28AFD /* TimesTablesApp.swift in Sources */,
 				D3117A812883184000B5277A /* CustomTopBarView.swift in Sources */,
-				D3117A882883267D00B5277A /* Constants.swift in Sources */,
 				D3117A8328831A0700B5277A /* GradientButton+ButtonStyle.swift in Sources */,
 				D3117A8528831E7B00B5277A /* TimesTablesViewModel.swift in Sources */,
+				D32033DF28EA8E0C0093CB15 /* Bundle+AppInfo.swift in Sources */,
 				D3117A7F28830AA800B5277A /* QuestionCardView.swift in Sources */,
 				D388802B288374EC005BBD93 /* SettingsView.swift in Sources */,
 			);
