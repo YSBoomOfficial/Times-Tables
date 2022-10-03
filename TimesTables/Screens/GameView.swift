@@ -16,23 +16,29 @@ struct GameView: View {
 			VStack {
 				CustomTopBarView(vm: vm)
 
-				(Text("Score: ").bold() + Text(vm.score, format: .number))
+				(Text("Score: ") + Text(vm.score, format: .number).bold())
 					.font(.title2)
 
 				Spacer()
 
-				QuestionCardView(proxy: proxy, num1: vm.lhsNum, num2: vm.rhsNum)
+				QuestionCardView(
+					proxy: proxy,
+					num1: vm.lhsNum,
+					num2: vm.rhsNum
+				)
 
 				Spacer()
 
 				VStack(spacing: 10) {
 					ForEach(vm.possibleAnswers, id: \.self) { ans in
-						AnswerCardView(
-							proxy: proxy,
-							value: ans
-						).onTapGesture {
+						Button {
 							vm.answerButtonTapped(ans)
-						}
+						} label: {
+							AnswerCardView(
+								proxy: proxy,
+								value: ans
+							)
+						}.buttonStyle(.plain)
 					}
 				}
 			}

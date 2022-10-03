@@ -41,9 +41,8 @@ class TimesTablesViewModel: ObservableObject {
 
 		while possibleAnswers.count < 4 {
 			let mult = Int.random(in: 1...12) * rhsNum
-			if !(mult == correctAnswer) {
-				possibleAnswers.append(mult)
-			}
+			guard mult != correctAnswer else { continue }
+			possibleAnswers.append(mult)
 		}
 
 		possibleAnswers.shuffle()

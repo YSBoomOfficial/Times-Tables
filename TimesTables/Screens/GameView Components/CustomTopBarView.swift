@@ -21,7 +21,6 @@ struct CustomTopBarView: View {
 
 			Text("Times Tables")
 				.font(.title.weight(.semibold))
-				.foregroundColor(.white)
 
 			Spacer(minLength: 0)
 
